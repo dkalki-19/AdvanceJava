@@ -55,5 +55,19 @@ public class UserRegistration {
             System.out.println(email + " : " + validateEmail(email));
         }
     }
+    
+    public static void main(String[] args) {
+        UserRegistration user = new UserRegistration();
+        
+        System.out.println("First Name Valid: " + user.validateFirstName("John"));
+        System.out.println("Last Name Valid: " + user.validateLastName("Doe"));
+        System.out.println("Email Valid: " + user.validateEmail("abc.xyz@bl.co.in"));
+        System.out.println("Mobile Valid: " + user.validateMobile("91 9919819801"));
+        System.out.println("Password Rule1 Valid: " + user.validatePasswordRule1("Pass@123"));
+        System.out.println("Password Rule2 Valid: " + user.validatePasswordRule2("Pass@123"));
+        System.out.println("Password Rule3 Valid: " + user.validatePasswordRule3("Pass@123"));
+        System.out.println("Password Rule4 Valid: " + user.validatePasswordRule4("Pass@123"));
+    }
 }
+
 
