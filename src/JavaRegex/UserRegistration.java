@@ -42,5 +42,11 @@ public class UserRegistration {
         String regex = "^(?=.*[A-Z])(?=.*[0-9]).{8,}$";
         return password.matches(regex);
     }
+    
+ // UC8: Password Rule 4 – Exactly 1 Special Character
+    public boolean validatePasswordRule4(String password) {
+        String regex = "^(?=.*[A-Z])(?=.*[0-9])(?=[^!@#$%^&*]*[!@#$%^&*][^!@#$%^&*]*$).{8,}$";
+        return password.matches(regex);
+    }
 }
 
