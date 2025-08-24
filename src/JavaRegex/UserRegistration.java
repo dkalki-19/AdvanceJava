@@ -36,5 +36,11 @@ public class UserRegistration {
         String regex = "^(?=.*[A-Z]).{8,}$";
         return password.matches(regex);
     }
+    
+ // UC7: Password Rule 3 – At least 1 Numeric
+    public boolean validatePasswordRule3(String password) {
+        String regex = "^(?=.*[A-Z])(?=.*[0-9]).{8,}$";
+        return password.matches(regex);
+    }
 }
 
