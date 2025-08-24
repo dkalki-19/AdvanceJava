@@ -24,5 +24,11 @@ public class UserRegistration {
         String regex = "^[0-9]{2} [0-9]{10}$";
         return mobile.matches(regex);
     }
+    
+ // UC5: Password Rule 1 – Min 8 chars
+    public boolean validatePasswordRule1(String password) {
+        String regex = "^.{8,}$";
+        return password.matches(regex);
+    }
 }
 
