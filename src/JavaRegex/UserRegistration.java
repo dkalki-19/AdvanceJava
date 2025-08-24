@@ -18,4 +18,11 @@ public class UserRegistration {
         String regex = "^[a-zA-Z0-9]+([._+-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+\\.[a-z]{2,}(\\.[a-z]{2})?$";
         return email.matches(regex);
     }
+    
+ // UC4: Mobile Number
+    public boolean validateMobile(String mobile) {
+        String regex = "^[0-9]{2} [0-9]{10}$";
+        return mobile.matches(regex);
+    }
 }
+
