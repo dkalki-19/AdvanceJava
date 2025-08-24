@@ -30,5 +30,11 @@ public class UserRegistration {
         String regex = "^.{8,}$";
         return password.matches(regex);
     }
+    
+ // UC6: Password Rule 2 – At least 1 Uppercase
+    public boolean validatePasswordRule2(String password) {
+        String regex = "^(?=.*[A-Z]).{8,}$";
+        return password.matches(regex);
+    }
 }
 
