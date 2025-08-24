@@ -48,5 +48,12 @@ public class UserRegistration {
         String regex = "^(?=.*[A-Z])(?=.*[0-9])(?=[^!@#$%^&*]*[!@#$%^&*][^!@#$%^&*]*$).{8,}$";
         return password.matches(regex); 
     }
+    
+ // UC9: Multiple Emails
+    public void testMultipleEmails(String[] emails) {
+        for(String email : emails) {
+            System.out.println(email + " : " + validateEmail(email));
+        }
+    }
 }
 
