@@ -6,4 +6,10 @@ public class UserRegistration {
         String regex = "^[A-Z][a-zA-Z]{2,}$";
         return firstName.matches(regex);
     }
+    
+ // UC2: Last Name
+    public boolean validateLastName(String lastName) {
+        String regex = "^[A-Z][a-zA-Z]{2,}$";
+        return lastName.matches(regex);
+    }
 }
